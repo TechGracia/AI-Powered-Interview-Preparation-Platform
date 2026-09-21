@@ -6,7 +6,11 @@ import {
   History,
   User,
   Trophy,
-  Bot
+  Bot,
+  BarChart3,
+  Briefcase,
+  BookOpen,
+  Target
 } from "lucide-react";
 import { useState } from "react";
 
@@ -21,12 +25,52 @@ function DashboardLayout() {
   };
 
   const menuItems = [
-    { to: "/dashboard", icon: LayoutDashboard, label: "Dashboard" },
-    { to: "/interview", icon: Mic, label: "Interview" },
-    { to: "/history", icon: History, label: "History" },
-    { to: "/leaderboard", icon: Trophy, label: "Leaderboard" },
-    { to: "/profile", icon: User, label: "Profile" }
-  ];
+  {
+    to: "/dashboard",
+    icon: LayoutDashboard,
+    label: "Dashboard"
+  },
+  {
+    to: "/interview",
+    icon: Mic,
+    label: "Interview"
+  },
+  {
+    to: "/job-match",
+    icon: Briefcase,
+    label: "Job Match"
+  },
+  {
+    to: "/interview-readiness",
+    icon: Target,
+    label: "Readiness"
+  },
+  {
+    to: "/skill-gap",
+    icon: BarChart3,
+    label: "Skill Gap"
+  },
+  {
+  to: "/improvement-plan",
+  icon: BookOpen,
+  label: "Improvement Plan",
+},
+  {
+    to: "/history",
+    icon: History,
+    label: "History"
+  },
+  {
+    to: "/leaderboard",
+    icon: Trophy,
+    label: "Leaderboard"
+  },
+  {
+    to: "/profile",
+    icon: User,
+    label: "Profile"
+  }
+];
 
   return (
     <div className="flex min-h-screen bg-gradient-to-br from-[#0f172a] via-[#1e1b4b] to-[#312e81] text-white">

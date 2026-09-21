@@ -122,6 +122,40 @@ function Dashboard() {
           refreshStats={fetchData} // ✅ FIX (cleaner)
         />
       </div>
+      {/* ---------------- JOB DESCRIPTION MATCHING ---------------- */}
+
+<div className="mt-8 bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl p-6 shadow-2xl">
+
+  <div className="flex items-center gap-4">
+
+    {/* ICON */}
+    <div className="p-3 rounded-xl bg-gradient-to-r from-indigo-500 to-purple-600 text-2xl">
+      💼
+    </div>
+
+    {/* TEXT */}
+    <div>
+      <h2 className="text-xl font-bold text-white">
+        Job Description Matching
+      </h2>
+
+      <p className="text-gray-400 mt-1">
+        Compare your resume with a job description and identify
+        matched and missing skills.
+      </p>
+    </div>
+
+  </div>
+
+  {/* BUTTON */}
+  <button
+    onClick={() => navigate("/job-match")}
+    className="mt-5 px-6 py-3 rounded-xl bg-gradient-to-r from-indigo-500 to-purple-600 text-white font-semibold hover:scale-105 transition"
+  >
+    Analyze Job Match →
+  </button>
+
+</div>
 
       {/* ---------------- BUTTON ---------------- */}
       <button

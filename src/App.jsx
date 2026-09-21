@@ -12,6 +12,10 @@ import InterviewHistory from "./pages/InterviewHistory";
 import Profile from "./pages/Profile";
 import MockInterview from "./pages/MockInterview";
 import Leaderboard from "./pages/LeaderBoard";
+import JobMatching from "./pages/JobMatching";
+import SkillGap from "./pages/SkillGap";
+import InterviewReadiness from "./pages/InterviewReadiness";
+import ImprovementPlan from "./pages/ImprovementPlan";
 
 // 🎯 AI INTERVIEW COMPONENT
 import InterviewSession from "./components/InterviewSession";
@@ -46,6 +50,10 @@ function App() {
           <Route path="history" element={<InterviewHistory />} />
           <Route path="profile" element={<Profile />} />
           <Route path="leaderboard" element={<Leaderboard />} />
+          <Route path="job-match" element={<JobMatching />} />
+          <Route path="skill-gap" element={<SkillGap />} />
+          <Route path="interview-readiness" element={<InterviewReadiness />}/>
+          <Route path="improvement-plan" element={<ImprovementPlan />}/>
         </Route>
 
       </Routes>

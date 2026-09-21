@@ -22,3 +22,27 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+# Environment variables and secrets
+.env
+*.env
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Local database
+*.db
+
+# Python virtual environment
+venv/
+.venv/
+
+# Node dependencies
+node_modules/
+
+# Frontend build files
+dist/
+build/
+
+# Vite
+.vite/
